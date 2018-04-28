@@ -1,0 +1,1 @@
+same as array but it receives value of different types
