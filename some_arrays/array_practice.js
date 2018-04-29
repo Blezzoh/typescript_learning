@@ -32,3 +32,19 @@ var fy = function () {
     return newArr;
 };
 console.log(fy());
+var juice = (function () {
+    function juice(name, price) {
+        this._name = name;
+        this._price = price ? price : 0;
+    }
+    return juice;
+})();
+//array of objects
+var juices = [new juice("mango", 10), new juice("apple", 5), new juice("pineapple", 11)];
+console.log();
+console.log("juices");
+for (var _i = 0; _i < juices.length; _i++) {
+    var i_1 = juices[_i];
+    console.log(i_1._name);
+    console.log(i_1._price);
+}

@@ -42,3 +42,19 @@ var fy = function (): number[] {
 }
 console.log(fy());
 
+class juice {
+    _name:string;
+    _price:number;
+    constructor(name:string, price?:number){
+        this._name = name;
+        this._price = price ? price: 0;
+    }
+}
+//array of objects
+var juices: Array<juice> = [new juice("mango", 10), new juice("apple", 5), new juice("pineapple", 11)];
+console.log();
+console.log("juices");
+for(let i of juices){
+    console.log(i._name);
+    console.log(i._price);
+}
